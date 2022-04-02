@@ -6,7 +6,7 @@ export const Tamanho = {
 
 export const color = {
     "pr":"rgb(243, 86, 39)",
-    "sc":"",
-    "tr":"",
+    "sc":"#ffffff",
+    "tr":"#000000",
 
 }

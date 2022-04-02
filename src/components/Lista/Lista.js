@@ -1,5 +1,5 @@
 import Link from "next/link"
-import { Tamanho } from "../../themes/themes"
+import { color, Tamanho } from "../../themes/themes"
 
 
 export default function Lista ({array}){
@@ -41,10 +41,16 @@ li{
 a{
 
     text-decoration:none;
+    color:${color.pr};
+
 
 
 }
+a:hover{
+    transition: 500ms;
+    color:${color.sc};
 
+}
 
 
 

@@ -8,7 +8,7 @@ export default function HomeScreen(props) {
     <main>
       <section>
         <User
-          img="img/user/user.png"
+          img="img/user/user.jpg"
           nome="Gabriel Santos"
           texto="Sala 1 int 7 "
         />

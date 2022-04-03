@@ -3,10 +3,10 @@ import { useState } from "react";
 export default function CalculadoraScreen (){
 
     const [respostaEpg,setRespostaEpg] = useState(0)
-    let massa;
-    let gravidade;
-    let altura;
-
+    const [massa,setMassa] = useState();
+    const [gravidade,setGravidade] = useState();
+    const [altura,setAltura] = useState();
+   
 
     
 
@@ -14,7 +14,7 @@ export default function CalculadoraScreen (){
     function calcularEpg (){ 
 
         const resultado = (massa*gravidade*altura)
-
+        console.log(massa,gravidade,altura)
         setRespostaEpg(resultado)
 
     }
@@ -36,19 +36,20 @@ export default function CalculadoraScreen (){
 
                     <Titulo tag="h2" cl="pr" tm="m"> energia potencial gravitacional </Titulo>
                     <Paragrafo tag="p"> a gravidade da terra e de 10m/s </Paragrafo>
-                    <Input type="number" placeholder="Massa em Kg" evento={(e)=>{ 
+                    <Input value={massa} type="number" placeholder="Massa em Kg" evento={(e)=>{ 
                         const massaInput = e.target.value
                         console.log(massaInput)
-                        massa = massaInput
+                        setMassa(massaInput)
                         
                     }} />
-                    <Input type="number" placeholder="Altura" evento={(e)=>{ 
+                    <Input value={altura} type="number" placeholder="Altura" evento={(e)=>{ 
                         const alturaInput = e.target.value
-                        altura = alturaInput
+                        setAltura (alturaInput)
+
                     }} /> 
-                    <Input type="number" placeholder="Gravidade " evento={(e)=>{ 
+                    <Input value={gravidade} type="number" placeholder="Gravidade " evento={(e)=>{ 
                         const gravidadeInput = e.target.value
-                        gravidade = gravidadeInput}}/>
+                        setGravidade(gravidadeInput)}}/>
                     <Botao evento={() => calcularEpg()}> Calcular </Botao>
                     <div>
                         {respostaEpg}    

@@ -144,13 +144,13 @@ main{
 }
 
 
-export function Input ({placeholder,type,evento}){ 
-  console.log(placeholder)
+export function Input ({placeholder,type,evento , value}){ 
+ 
   return(
 
     <>
     
-    <input placeholder={placeholder} type={type} onChange={evento} />
+    <input value={value} placeholder={placeholder} type={type} onChange={evento} />
     <style jsx>
 
       {`
@@ -160,6 +160,13 @@ export function Input ({placeholder,type,evento}){
           font-weight: 700;
           background:${color.sc} ;
 
+        }
+
+        @media (max-width:357px){
+          input{
+          font-size: ${Tamanho.p};
+          width:98%;
+          }
         }
 
       

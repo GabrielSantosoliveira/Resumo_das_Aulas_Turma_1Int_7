@@ -51,6 +51,7 @@ export function Box({ tag, children }) {
             @media screen and (max-width: 398px) {
             ${tag} {
               width :320px ;
+              box-sizing: border-box ;
             }
           
         `}
@@ -66,13 +67,9 @@ export function Titulo({ tag, children, tm, cl }) {
 
   if (cl == undefined) {
     Cl = "#ffffff";
-  } else if (cl == "pr") {
+  } 
+  else if (cl == "pr") {
     Cl = color.pr;
-  } else if (cl == "m") {
-    Cl = Tamanho.m;
-  } else {
-    Tm = Tamanho.g;
-    return Tm;
   }
 
   if (tm == undefined) {
@@ -81,9 +78,8 @@ export function Titulo({ tag, children, tm, cl }) {
     Tm = Tamanho.p;
   } else if (tm == "m") {
     Tm = Tamanho.m;
-  } else {
+  } else if (tm == "g") {
     Tm = Tamanho.g;
-    return Tm;
   }
 
   const Tag = tag;

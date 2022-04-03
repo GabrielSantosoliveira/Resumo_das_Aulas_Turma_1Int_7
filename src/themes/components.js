@@ -99,4 +99,99 @@ export function Titulo({ tag, children, tm, cl }) {
       </style>
     </>
   );
+
+}
+
+export function Principal ({children}){
+  return(
+    
+    <>
+  
+
+    <main>
+
+{children}
+
+
+
+    </main>
+
+
+    <style jsx>
+
+{`
+
+
+
+main{ 
+                color: #ffffff;
+                background-image:url(/img/bg.jpg);
+                min-height: 100vh;
+                
+                }
+
+
+`}
+
+
+    </style>
+
+
+
+  
+  
+  </>)
+}
+
+
+export function Input ({placeholder,type,evento}){ 
+  console.log(placeholder)
+  return(
+
+    <>
+    
+    <input placeholder={placeholder} type={type} onChange={evento} />
+    <style jsx>
+
+      {`
+        input{
+
+          font-size:${Tamanho.m};
+          font-weight: 700;
+
+        }
+
+      
+      `}
+    </style>
+    
+    </>
+
+
+  )
+}
+
+export function Botao ({children,evento}){ 
+
+  return(
+    <>
+
+      <button onClick={evento}> {children} </button>
+
+      <style jsx>
+
+        {`
+        
+        button{
+          font-size:${Tamanho.m};
+          font-weight: 700;
+          color:${color.pr};
+          
+        }
+        
+        `}
+      </style>
+    </>
+  )
+
 }

@@ -158,6 +158,7 @@ export function Input ({placeholder,type,evento}){
 
           font-size:${Tamanho.m};
           font-weight: 700;
+          background:${color.sc} ;
 
         }
 

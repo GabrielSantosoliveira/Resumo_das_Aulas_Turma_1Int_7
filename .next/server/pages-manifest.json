@@ -1,6 +1,5 @@
 {
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
-  "/_document": "pages/_document.js",
-  "/resumos/fisica/Energia": "pages/resumos/fisica/Energia.js"
+  "/_document": "pages/_document.js"
 }

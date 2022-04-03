@@ -25,15 +25,10 @@
       "static/chunks/main.js",
       "static/chunks/pages/_error.js"
     ],
-    "/resumos/biologia/celulas": [
+    "/resumos/fisica/calculadoras": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
-      "static/chunks/pages/resumos/biologia/celulas.js"
-    ],
-    "/resumos/fisica/Energia": [
-      "static/chunks/webpack.js",
-      "static/chunks/main.js",
-      "static/chunks/pages/resumos/fisica/Energia.js"
+      "static/chunks/pages/resumos/fisica/calculadoras.js"
     ]
   },
   "ampFirstPages": []

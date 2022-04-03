@@ -23,6 +23,8 @@ export default function HomeScreen(props) {
 
           <Titulo tag="h1"> Resumos </Titulo>
           <Lista array={dataLista} />
+        
+         
         </Box>
 
       </section>

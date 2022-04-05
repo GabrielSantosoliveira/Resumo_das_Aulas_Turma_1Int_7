@@ -12,7 +12,7 @@ export function Paragrafo({ tag, children }) {
           ${tag} {
             margin-bottom: 1rem;
             text-align: center;
-            font-size:  ${Tamanho.p};
+            font-size: ${Tamanho.p};
           }
           @media screen and (max-width: 780px) {
             ${tag} {
@@ -67,8 +67,7 @@ export function Titulo({ tag, children, tm, cl }) {
 
   if (cl == undefined) {
     Cl = "#ffffff";
-  } 
-  else if (cl == "pr") {
+  } else if (cl == "pr") {
     Cl = color.pr;
   }
 
@@ -99,107 +98,69 @@ export function Titulo({ tag, children, tm, cl }) {
       </style>
     </>
   );
-
 }
 
-export function Principal ({children}){
-  return(
-    
+export function Principal({ children }) {
+  return (
     <>
-  
-
-    <main>
-
-{children}
-
-
-
-    </main>
-
-
-    <style jsx>
-
-{`
-
-
-
-main{ 
-                color: #ffffff;
-                background-image:url(/img/bg.jpg);
-                min-height: 100vh;
-                
-                }
-
-
-`}
-
-
-    </style>
-
-
-
-  
-  
-  </>)
-}
-
-
-export function Input ({placeholder,type,evento , value}){ 
- 
-  return(
-
-    <>
-    
-    <input value={value} placeholder={placeholder} type={type} onChange={evento} />
-    <style jsx>
-
-      {`
-        input{
-
-          font-size:${Tamanho.m};
-          font-weight: 700;
-          background:${color.sc} ;
-
-        }
-
-        @media (max-width:357px){
-          input{
-          font-size: ${Tamanho.p};
-          width:98%;
-          }
-        }
-
-      
-      `}
-    </style>
-    
-    </>
-
-
-  )
-}
-
-export function Botao ({children,evento}){ 
-
-  return(
-    <>
-
-      <button onClick={evento}> {children} </button>
+      <main>{children}</main>
 
       <style jsx>
-
         {`
-        
-        button{
-          font-size:${Tamanho.m};
-          font-weight: 700;
-          color:${color.pr};
-          
-        }
-        
+          main {
+            color: #ffffff;
+            background-image: url(/img/bg.jpg);
+            min-height: 100vh;
+          }
         `}
       </style>
     </>
-  )
+  );
+}
 
+export function Input({ placeholder, type, evento, value }) {
+  return (
+    <>
+      <input
+        value={value}
+        placeholder={placeholder}
+        type={type}
+        onChange={evento}
+      />
+      <style jsx>
+        {`
+          input {
+            font-size: ${Tamanho.m};
+            font-weight: 700;
+            background: ${color.sc};
+          }
+
+          @media (max-width: 357px) {
+            input {
+              font-size: ${Tamanho.p};
+              width: 98%;
+            }
+          }
+        `}
+      </style>
+    </>
+  );
+}
+
+export function Botao({ children, evento }) {
+  return (
+    <>
+      <button onClick={evento}> {children} </button>
+
+      <style jsx>
+        {`
+          button {
+            font-size: ${Tamanho.m};
+            font-weight: 700;
+            color: ${color.pr};
+          }
+        `}
+      </style>
+    </>
+  );
 }

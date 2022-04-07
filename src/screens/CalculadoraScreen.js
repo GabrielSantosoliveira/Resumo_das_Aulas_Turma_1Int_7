@@ -11,6 +11,7 @@ import Head from "../components/Head/Head"
 
 import EpgCaladora from "../components/calculadoras/calculadorasDeEnergia/Epg";
 import EcCalculadora from "../components/calculadoras/calculadorasDeEnergia/Ec";
+import GParaKg from "../components/calculadoras/calculadorasDeEnergia/GParaKg";
 export default function CalculadoraScreen() {
   return (
     <>
@@ -24,10 +25,18 @@ export default function CalculadoraScreen() {
         </Titulo>
 
         <Box tag="section">
+          <GParaKg/>
           <EpgCaladora />
           <EcCalculadora />
         </Box>
       </Principal>
     </>
   );
+}
+
+
+export async function getStaticProps(context) {
+  return {
+    props: {}, // will be passed to the page component as props
+  }
 }

@@ -30,11 +30,6 @@
       "static/chunks/main.js",
       "static/chunks/pages/_error.js"
     ],
-    "/resumos/biologia/celulas": [
-      "static/chunks/webpack.js",
-      "static/chunks/main.js",
-      "static/chunks/pages/resumos/biologia/celulas.js"
-    ],
     "/resumos/portugues/LinguaLinguagem": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",

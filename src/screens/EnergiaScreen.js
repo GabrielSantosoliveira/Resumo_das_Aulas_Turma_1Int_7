@@ -1,3 +1,4 @@
+import Head from "../components/Head/Head";
 import { Paragrafo, Titulo ,Box } from "../themes/components";
 
 export default function EnergiaScreen (){
@@ -7,6 +8,9 @@ export default function EnergiaScreen (){
 
 
     <>
+    <Head titulo="|Energia">
+
+    </Head>
     <main>  
  <Box tag="section">
      

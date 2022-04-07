@@ -164,3 +164,18 @@ export function Botao({ children, evento }) {
     </>
   );
 }
+export function Hr() {
+  return (
+    <>
+      <hr />
+
+      <style jsx>
+        {`
+          hr {
+            margin: 1.2rem;
+          }
+        `}
+      </style>
+    </>
+  );
+}

@@ -1,3 +1,4 @@
+import Head from "../components/Head/Head";
 import Lista from "../components/Lista/Lista";
 import User from "../components/User/User";
 import { dataLista } from "../data/data";
@@ -5,7 +6,12 @@ import { Box, Paragrafo, Titulo } from "../themes/components";
 
 export default function HomeScreen(props) {
   return (
+
     <main>
+      <Head titulo="Home | gabriel ">
+
+      </Head>
+
       <section>
         <User
           img="img/user/user.jpg"

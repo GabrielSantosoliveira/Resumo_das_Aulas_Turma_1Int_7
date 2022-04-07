@@ -1,11 +1,14 @@
-import { Box, Paragrafo, Titulo } from "../themes/components";
+import Head from "../components/Head/Head";
+import { Box, Paragrafo, Titulo , Hr } from "../themes/components";
 
 export default  function CelulaScreen () {
     
     return (
 
         <>
+            <Head titulo="|Celulas">
 
+            </Head>
             <main>
 
                 <Box tag="section">
@@ -30,8 +33,8 @@ export default  function CelulaScreen () {
                         servivo e tudo que nace se desenvove  reproduz e  morre e 
                     </Paragrafo>
 
-                    <hr/>
-
+                        
+                    <Hr/>
                     <Titulo   cl="pr" tag="h2" tm="m"> Parte basicas de celulas </Titulo>
                     <Paragrafo tag="p">
                         as partes basicas de celulas são 
@@ -40,13 +43,13 @@ export default  function CelulaScreen () {
                     
                      
                     </Paragrafo>
-                    <hr />
+                    <Hr />
 
                     <Titulo   cl="pr" tag="h2" tm="m">
                         Diferenças da celula procariotes e eucariotices
                     </Titulo>
 
-                    <hr />
+                    <Hr />
                   
 
                     
@@ -55,7 +58,7 @@ export default  function CelulaScreen () {
                             tem a carioteca
                      </Titulo>
                         <div className="center"><img  className="carioteca" src="\img\celulas\celula.jpg" alt="imagem de uma celula" /></div>
-                        <hr />
+                        <Hr />
 
                         
                         
@@ -63,11 +66,11 @@ export default  function CelulaScreen () {
 
                         <div className="center">
                             <img className="carioteca"  src="\img\celulas\procariote.png" alt="imagem de uma celula" />
-                            <hr />
+                            <Hr />
                         </div>
 
                     
-                    <hr/>
+                    <Hr/>
 
                 </Box>
                 

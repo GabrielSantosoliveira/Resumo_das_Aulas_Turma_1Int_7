@@ -1,3 +1,4 @@
+import Head from "../components/Head/Head";
 import { Box, Principal , Titulo , Paragrafo } from "../themes/components";
 
 export default function LinguaLinguagemScreen () {
@@ -7,7 +8,9 @@ export default function LinguaLinguagemScreen () {
         
         <>
         
-        
+        <Head titulo="lingua || linguagem ">
+
+        </Head>
         <Principal>
 
 

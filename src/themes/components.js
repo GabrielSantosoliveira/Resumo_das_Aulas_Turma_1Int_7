@@ -179,3 +179,70 @@ export function Hr() {
     </>
   );
 }
+
+export function TextoForte ({children}) { 
+  return (
+    <>
+    
+    <strong>{children}</strong>
+
+
+    <style jsx> {`
+      
+      strong{
+        color:${color.pr};
+        font-size: ${Tamanho.m};
+      }
+      
+      `}</style>
+
+    </>
+  )
+}
+export function Imagem ({alt,src}) {
+  return (
+    <>
+    
+    <div><img src={src} alt={alt} /></div>
+    
+
+    <style jsx> {`
+      
+
+      img{
+        width:600px;
+      }
+      div{
+        
+                margin:auto;
+                width:99%;
+                display:flex;
+                flex-direction:row;
+                justify-content:center;
+                justify-items:center;
+                align-items:center;
+            
+
+      }
+    @media screen and (max-width: 779px) {
+                img{
+                width:500px;
+                }
+            }
+            @media screen and (max-width: 567px) {
+            img{
+                width:400px;
+            }
+            }
+            @media screen and (max-width: 404px) {
+            img{
+                width:300px;
+            }
+            }
+      
+      `}
+      </style>
+    
+    </>
+  )
+}

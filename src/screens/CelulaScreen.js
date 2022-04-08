@@ -1,5 +1,5 @@
 import Head from "../components/Head/Head";
-import { Box, Paragrafo, Titulo , Hr } from "../themes/components";
+import { Box, Paragrafo, Titulo , Hr, Imagem } from "../themes/components";
 
 export default  function CelulaScreen () {
     
@@ -57,7 +57,7 @@ export default  function CelulaScreen () {
                          celulas eucariotices
                             tem a carioteca
                      </Titulo>
-                        <div className="center"><img  className="carioteca" src="\img\celulas\celula.jpg" alt="imagem de uma celula" /></div>
+                        <Imagem src="\img\celulas\celula.jpg" alt="imagem de uma celula"/>
                         <Hr />
 
                         
@@ -65,7 +65,7 @@ export default  function CelulaScreen () {
                         <Titulo  cl="pr"  tag="h3" tm="p">procariotes não tem carioteca e são mais simples</Titulo> 
 
                         <div className="center">
-                            <img className="carioteca"  src="\img\celulas\procariote.png" alt="imagem de uma celula" />
+                           <Imagem  className="carioteca" src="\img\celulas\procariote.png" alt="imagem de uma celula" />
                             <Hr />
                         </div>
 
@@ -81,22 +81,8 @@ export default  function CelulaScreen () {
 
             {`
 
-            .center{
-                margin:auto;
-                width:99%;
-                display:flex;
-                flex-direction:row;
-                justify-content:center;
-                justify-items:center;
-                align-items:center;
-            }
-
-            @media screen and (max-width: 779px) {
-                img{
-                width:500px;
-                }
-            }
-
+           
+           
             
 
             
@@ -120,9 +106,7 @@ export default  function CelulaScreen () {
 
 
             @media screen and (max-width: 567px) {
-            img{
-                width:400px;
-            }
+            
             .carioteca{
                 width:300px;
             }
@@ -130,10 +114,7 @@ export default  function CelulaScreen () {
             }
 
             @media screen and (max-width: 404px) {
-            img{
-                width:300px;
-            }
-            .carioteca{
+                        .carioteca{
                 width:300px;
             }
 
@@ -147,8 +128,5 @@ export default  function CelulaScreen () {
 
 
 
-export async function getStaticProps(context) {
-    return {
-      props: {}, // will be passed to the page component as props
-    }
-  }
+
+

@@ -2,5 +2,5 @@
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
-  "/resumos/portugues/LinguaLinguagem": "pages/resumos/portugues/LinguaLinguagem.js"
+  "/resumos/quimica/IntroducaoAquimica": "pages/resumos/quimica/IntroducaoAquimica.js"
 }

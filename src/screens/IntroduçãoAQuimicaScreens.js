@@ -72,14 +72,3 @@ export default function IntroduçãoAQuimicaScreen ({posts}) {
 
 
 
-export async function getStaticProps() {
-    
-    
-   
-    return {
-      props: {
-       
-      },
-    }
-  }
-  

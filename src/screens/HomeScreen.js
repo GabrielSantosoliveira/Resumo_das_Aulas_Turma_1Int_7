@@ -4,7 +4,7 @@ import User from "../components/User/User";
 import { dataLista } from "../data/data";
 import { Box, Paragrafo, Titulo } from "../themes/components";
 
-export default function HomeScreen(props) {
+export default function HomeScreen({lista}) {
   return (
 
     <main>
@@ -28,7 +28,7 @@ export default function HomeScreen(props) {
           </Paragrafo>
 
           <Titulo tag="h1"> Resumos </Titulo>
-          <Lista array={dataLista} />
+          <Lista array={lista} />
         
          
         </Box>
@@ -58,9 +58,5 @@ export default function HomeScreen(props) {
   );
 }
 
-export async function getStaticProps() {
-  return {
-    dataLista,
-  };
-}
+
 

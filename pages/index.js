@@ -1,9 +1,18 @@
+import { dataLista } from "../src/data/data";
 import HomeScreen from "../src/screens/HomeScreen"
 
-export default function Home (){
+export async function getStaticProps() {
+    
+    return {
+     props:{
+         dataLista
+     }
+    };
+  }
+export default function Home ({dataLista}){
     return (
 
-        <HomeScreen/>
+        <HomeScreen lista={dataLista}/>
 
     )
 }

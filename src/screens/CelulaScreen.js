@@ -39,7 +39,7 @@ export default  function CelulaScreen () {
                     <Paragrafo tag="p">
                         as partes basicas de celulas são 
 
-                        <img src="\img\celulas\celula.jpg" alt="imagem de uma celula" />
+                        <Imagem src="\img\celulas\celula.jpg" alt="imagem de uma celula" />
                     
                      
                     </Paragrafo>
